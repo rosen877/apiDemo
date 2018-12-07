@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+}
+body{
+	background-color: #ccc;
+}
+.header{
+	background-image: url(../img/asoggetti-1201817-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0% 100%;
+	width: 100%;
+	height: 60vh;
+	position: relative;
+	h1{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		color: #fff;
+		transform: translate(-50%,-50%);
+		&::before{
+			content:'';
+			display: inline-block;
+			position: absolute;
+			z-index: -2;
+			overflow: hidden;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 400px;
+			height: 180px;
+			opacity: 0.3;
+			background-color: rgb(255, 255, 255);
+		}
+	}
+}
+#container{
+	width: 1200px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	.item{
+		width: 33.3%;
+	}
+	img{
+		background-color: #ccc;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 10px;
+		transition: .5s;
+		&:hover{
+			background-color: rgb(77, 77, 77);
+		}
+	}
+}
+.searchWarp{
+	width: 500px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	#search{
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+		font-size: 18px;
+		border: 0px solid #000;
+		border-radius: 200px;
+		opacity: 0.7;
+		height: 40px;
+		line-height: 40px;
+	}
+	&::after{
+		content:'Enter';
+		position: absolute;
+		vertical-align: middle;
+		right: 15px;
+		top: 0px;
+		line-height: 40px;
+		font-size: 14px;
+		color: #333;
+	}
+}
