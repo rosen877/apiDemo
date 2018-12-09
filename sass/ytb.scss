@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+}
+.nav{
+	height: 50px;
+	background-color: #FF0000;
+}
+h1{
+	color:#fff;
+	padding: 0 10px;
+}
+
+#container{
+	background-color: #eee;
+	height: calc(100vh - 50px);
+	.channelwarp{
+		background-color: #fff;
+		box-shadow:  0 10px 20px 2px rgba(51, 51, 51, 0.413);
+		display: flex;
+		position: relative;
+		z-index: 1;
+		left: 50%;
+		top: 50%;
+		width: 70%;
+		max-width: 1200px;
+		transform: translate(-50%,-60%);
+		.chennelBg{
+			background-size: cover;
+			background-position: 50% 0%;
+			width: 100%;
+		}
+		.content{
+			padding: 10px;
+		}
+		
+	}
+
+}
+.contentText{
+	display: inline-block;
+	width: 500px;
+}
+#next,#last{
+	cursor: pointer;
+	text-align: center;
+	font-size: 30px;
+	color: #999;
+	font-weight: 200;
+	width: 50px;
+	height: 50px;
+	border: 1px solid rgba(82, 82, 82, 0.503);
+	border-radius: 100%;
+	position: absolute;
+	right: 10%;
+	top: 50%;
+	box-shadow: 0 5px 10px #aaa;
+	transform: translate(0%,-50%);
+}
+#last{
+	left: 10%;
+}
+.chennelName{
+	font-size: 24px;
+}
+h3{
+	font-size: 16px;
+	margin: 5px 0;
+}
+span{
+	font-size: 14px;
+}
