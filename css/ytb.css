@@ -45,9 +45,20 @@ h1 {
       background-position: 50% 0%;
       width: 10%;
       font-size: 0;
-      vertical-align: middle; }
+      vertical-align: middle;
+      font-size: 0; }
       #container .channelwarp .chennelBg img {
-        width: 100%; }
+        border: 1px solid #d10000;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+      #container .channelwarp .chennelBg .btn {
+        height: 10px;
+        width: 100%;
+        font-size: 10px;
+        line-height: 8px;
+        color: #fff;
+        background-color: #d10000; }
     #container .channelwarp .content {
       padding: 10px; }
 

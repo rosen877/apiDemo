@@ -137,7 +137,7 @@ $(function(){
 						let pic3 = objtr.items[0].snippet.thumbnails.medium.url;
 						
 		
-						function setMoney(num){//取整，三行逗号隔开
+						function setMoney(num){
 							return parseFloat(num).toLocaleString();
 							
 						}
