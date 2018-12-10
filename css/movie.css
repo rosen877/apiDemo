@@ -7,20 +7,20 @@ body {
 .nav {
   height: 50px;
   background-color: #333;
-  -webkit-box-shadow: 0 5px 10px #303030;
-  box-shadow: 0 5px 10px #303030; }
+  -webkit-box-shadow: 0 0px 10px black;
+  box-shadow: 0 0px 10px black; }
   .nav h1 {
     margin-left: 50px; }
 
 .searchWarp {
   width: 1200px;
-  margin: auto; }
+  margin: 20px auto 0; }
   .searchWarp input {
     margin-top: 10px;
     width: 90px;
     background-color: #bde1ffd5;
     border-radius: 200px;
-    height: 30px;
+    height: 40px;
     margin: 10px 20px;
     border: 0px solid;
     padding: 5px 10px;
@@ -29,7 +29,7 @@ body {
     transition: .5s;
     font-size: 14px; }
     .searchWarp input:focus {
-      width: 150px;
+      width: 300px;
       background-color: #bde1ffd5;
       border-color: #66CC75;
       -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
