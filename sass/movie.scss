@@ -1,34 +1,76 @@
 *{
 	margin: 0;
-	// outline: 1px solid;
 }
 body{
-	background-color: #fff;
+	background-color: #023865;
 }
 .nav{
 	height: 50px;
 	background-color: #333;
+	box-shadow:  0 5px 10px rgb(48, 48, 48);
+	h1{
+		margin-left: 50px;
+	}
+}
+
+.searchWarp{
+	width: 1200px;
+	margin: auto;
+	input{
+		margin-top: 10px;
+		width: 90px;
+		background-color: #bde1ffd5;
+		border-radius: 200px;
+		height: 30px;
+		margin: 10px 20px;
+		border: 0px solid;
+		padding: 5px 10px;
+		transition: .5s;
+		font-size: 14px;
+		&:focus {
+			width: 150px;
+			background-color: #bde1ffd5;
+			border-color: #66CC75;
+			box-shadow: 0 0 5px rgba(109,207,246,.5);
+			transition: .5s;
+		}
+	}
 }
 .output{
+	width: 1200px;
+	margin: auto;
 	.movieWrap{
-		width: 80%;	
-		max-width: 1200px;
-		margin:  50px auto ;
-		display: flex;
+		box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+		background-color: #fff;
+		width: 30%;	
+		display: inline-block;
+		position: relative;
+		border-radius: 10px;
+		margin:  20px;
 		font-size: 0;
 		.picWarp{
-			display: inline-block;
-			width: 30%;
-			vertical-align: middle;
+			width: 100%;
+			position: relative;
+			transition: .5s;
+			&:hover .videoWarp__content .titile{
+				top: auto;
+				bottom: 0;
+				transition: .5s;
+			}
 			img{
 				width: 100%;
 			}
 		}
 		&__content{
+			position: absolute;
+			bottom: -100%;
+			background-color: rgba(0, 0, 0, 0.82);
 			display: inline-block;
 			vertical-align: middle;
-			width: 75%;
+			width: 100%;
 			padding: 0 10px;
+			color:  #fff;
 			box-sizing: border-box;
 			
 			.movieName{
@@ -37,10 +79,12 @@ body{
 			}
 			.date{
 				font-size: 14px;
+			
 			}
 		}
 	}
 }
+
 .view{
 	width: 60px;
 	cursor: pointer;
@@ -51,12 +95,23 @@ body{
 	font-size: 14px;
 	margin: 20px 0;
 	transition: .3s;
+	color: #333;
 	&:hover{
 		background-color: #fff;
 	}
 }
+.titile{
+	width: 100%;
+	padding: 0 10px;
+	position: absolute;
+	top: 90%;
+	bottom: auto;
+	transition: .5s;
+	background-color: rgba(0, 0, 0, 0.806);
+	color:#fff;
+}
 .movieName{
-	font-size: 24px;
+	font-size: 20px;
 }
 .date{
 	font-size: 14px;

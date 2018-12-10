@@ -9,35 +9,74 @@ h1 {
   color: #fff;
   padding: 0 10px; }
 
-#container {
-  background-color: #eee;
+.warp {
+  position: relative;
   height: calc(100vh - 50px); }
+
+#container {
+  overflow: hidden;
+  background-color: #eee;
+  height: calc(100vh - 50px);
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
   #container .channelwarp {
+    cursor: pointer;
+    width: 300px;
+    margin: 10px;
+    display: inline-block;
+    height: 130px;
+    padding: 10px 50px;
+    border-radius: 10px;
     background-color: #fff;
     -webkit-box-shadow: 0 10px 20px 2px rgba(51, 51, 51, 0.413);
     box-shadow: 0 10px 20px 2px rgba(51, 51, 51, 0.413);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    width: 70%;
-    max-width: 1200px;
-    -webkit-transform: translate(-50%, -60%);
-    -ms-transform: translate(-50%, -60%);
-    transform: translate(-50%, -60%); }
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     #container .channelwarp .chennelBg {
       background-size: cover;
       background-position: 50% 0%;
-      width: 100%; }
+      width: 10%;
+      font-size: 0;
+      vertical-align: middle; }
+      #container .channelwarp .chennelBg img {
+        width: 100%; }
     #container .channelwarp .content {
       padding: 10px; }
 
+.containerWapr {
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50px;
+  top: 20%; }
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+span {
+  color: rgba(60, 60, 60, 0.744); }
+
 .contentText {
   display: inline-block;
-  width: 500px; }
+  width: 70%;
+  color: rgba(60, 60, 60, 0.744); }
 
 #next, #last {
   cursor: pointer;
@@ -47,7 +86,6 @@ h1 {
   font-weight: 200;
   width: 50px;
   height: 50px;
-  border: 1px solid rgba(82, 82, 82, 0.503);
   border-radius: 100%;
   position: absolute;
   right: 10%;
@@ -62,11 +100,12 @@ h1 {
   left: 10%; }
 
 .chennelName {
-  font-size: 24px; }
+  font-size: 24px;
+  margin: 5px 10px; }
 
 h3 {
   font-size: 16px;
   margin: 5px 0; }
 
-span {
-  font-size: 14px; }
+p {
+  font-size: 50px; }
