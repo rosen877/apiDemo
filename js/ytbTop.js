@@ -79,18 +79,18 @@ $(function(){
 				console.log(msg);
 				let channelName = msg.items[0].snippet.title;
 				let trackNum = msg.items[0].statistics.subscriberCount;
-				let watchNum = msg.items[0].statistics.viewCount;
+				let watchNump = msg.items[0].statistics.viewCount;
 				let videoNum = msg.items[0].statistics.videoCount;
 				let contentText = msg.items[0].snippet.description;
 				let pic = msg.items[0].snippet.thumbnails.medium.url;
 				let textWidth = $(".chennelBg").width();
 				
 
-				function setMoney(num){//取整，三行逗号隔开
+				function setMoney(num){
 					return parseFloat(num).toLocaleString();
 					
 				}
-				let liveNum=setMoney(watchNum);
+				let liveNum=setMoney(trackNum);
 				
 				$(".chennelName.one").text(channelName);
 				$(".watchNum.one").text(liveNum );
@@ -107,6 +107,7 @@ $(function(){
 				.done(function( obj ) {
 					console.log(obj);
 					let channelName2 = obj.items[0].snippet.title;
+					let trackNum = obj.items[0].statistics.subscriberCount;
 					let watchNum2 = obj.items[0].statistics.viewCount;
 					let pic2 = obj.items[0].snippet.thumbnails.medium.url;
 					
@@ -115,7 +116,7 @@ $(function(){
 						return parseFloat(num).toLocaleString();
 						
 					}
-					let liveNumf=setMoney(watchNum2);
+					let liveNumf=setMoney(trackNum);
 					
 					$(".chennelName.two").text(channelName2);
 					$(".watchNum.two").text(liveNumf );
@@ -140,7 +141,7 @@ $(function(){
 							return parseFloat(num).toLocaleString();
 							
 						}
-						let liveNumg=setMoney(watchNum3);
+						let liveNumg=setMoney(trackNum );
 						
 						$(".chennelName.three").text(channelNamejo);
 						$(".watchNum.three").text(liveNumg );
