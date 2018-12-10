@@ -23,6 +23,16 @@ h1{
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
+	&::before{
+		content:'';
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		background-image: url(https://yt3.ggpht.com/a-/AN66SAxPnPuLiQHb7d1R3fY_bYizF6IHQu_QuSEFxA=s240-mo-c-c0xffffffff-rj-k-no);
+		background-repeat: no-repeat;
+		background-size: contain;
+		filter:blur(15px);
+	}
 	.channelwarp{
 		cursor: pointer;
 		width: 300px;
@@ -36,7 +46,6 @@ h1{
 		text-align: center;
 		align-items: center;
 		.chennelBg{
-			
 			background-size: cover;
 			background-position: 50% 0%;
 			width: 10%;

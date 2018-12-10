@@ -189,5 +189,8 @@ $(function(){
 			}
 			console.log(left);
 			$('.containerWapr').css("left",left);
+
+
+			// $("#container::before").css("background-image","url(https://yt3.ggpht.com/a-/AN66SAxPnPuLiQHb7d1R3fY_bYizF6IHQu_QuSEFxA=s240-mo-c-c0xffffffff-rj-k-no)")
 		})
 })
