@@ -1,7 +1,7 @@
 @charset "UTF-8";
 * {
   margin: 0;
-  font-family: '微軟正黑體'; }
+  font-family: "微軟正黑體"; }
 
 .nav {
   height: 50px;
@@ -73,6 +73,11 @@ h1 {
         background-color: #d10000; }
     #container .channelwarp .content {
       padding: 10px; }
+
+.icon {
+  width: 15px; }
+  .icon img {
+    width: 100%; }
 
 .containerWapr {
   -webkit-transition: .5s;

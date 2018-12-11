@@ -9,29 +9,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="nav"><h1>本週熱門電影</h1></div>
-	<div class="searchWarp">
-			<input type="search"  placeholder="Search">
-	</div>
+    <div class="nav">
+      <div class="logo">
+        <img
+          src="https://www.themoviedb.org/assets/1/v4/logos/312x276-primary-green-74212f6247252a023be0f02a5a45794925c3689117da9d20ffe47742a665c518.png"
+          alt="TMDb"
+        />
+      </div>
+      <h1>THE Movie DB</h1>
+      <div class="searchWarp">
+		  <input type="search" placeholder="Search" />
+		</div>
+    </div>
+    <div class="block"></div>
+	<div class="titleWarp"><h2 class="hotTitle">熱門電影</h2></div>	
     <div class="output">
 			
       <!-- <div class="videoWarp"> -->
-        <!-- <div class="picWarp">
-          <img src="'+url+'">
-          <div class="videoWarp__content">
-            <div class="titile">
-              <h2 class="movieName">'+movie.original_title+'</h2>
-              <p class="date">'+data+'</p>
-              <div class="description">
-                <h3>簡介</h3>
-				<p class="description__content">'+description+'</p>
-				<div class="view">官網資訊</div>
-				<input class="movieId" type="hidden" value="'+movie.id+'">
+      <!--
+        <div class="picWarp">
+              <img src="'+url+'">
+              <div class="videoWarp__content">
+                <div class="titile">
+                  <h2 class="movieName">'+movie.original_title+'</h2>
+                  <p class="date">'+data+'</p>
+                  <div class="description">
+                    <h3>簡介</h3>
+        <p class="description__content">'+description+'</p>
+        <div class="view">官網資訊</div>
+        <input class="movieId" type="hidden" value="'+movie.id+'">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div> -->
+      -->
     </div>
 
     <script src="js/movie.js"></script>

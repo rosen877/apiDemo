@@ -1,30 +1,50 @@
 *{
 	margin: 0;
-	font-family: '微軟正黑體';
+	font-family: "微軟正黑體";
 }
 body{
 	background-color: #023865;
 }
 .nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
 	height: 50px;
+	z-index: 5;
 	background-color: #333;
 	box-shadow:  0 0px 10px rgb(0, 0, 0);
 	h1{
-		margin-left: 50px;
+		margin-left: 10px;
+		font-size: 28px;
+		line-height: 50px;
 		color:#fff;
+		vertical-align: top;
+	}
+	.logo{
+		vertical-align: top;
+		width: 40px;
+		height: 40px;
+		padding: 8px;
+		img{
+			vertical-align: top;
+			width: 100%;
+		}
 	}
 }
-
+.block{
+	height: 50px;
+}
 .searchWarp{
-	width: 1200px;
-	margin: 20px auto 0;
+	position: absolute;
+	right: 10%;
 	input{
-		margin-top: 10px;
+		margin-top: 8px;
 		width: 90px;
 		background-color: #bde1ffd5;
 		border-radius: 200px;
-		height: 40px;
-		margin: 10px 20px;
+		height: 35px;
 		border: 0px solid;
 		padding: 5px 10px;
 		transition: .5s;
@@ -86,7 +106,14 @@ body{
 		}
 	}
 }
-
+.titleWarp{
+	width: 1200px;
+	margin: auto;
+}
+.hotTitle{
+	margin: 20px 0 0 20px;
+	color:#fff;
+}
 .view{
 	width: 60px;
 	cursor: pointer;

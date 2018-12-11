@@ -1,21 +1,20 @@
+@charset "UTF-8";
 * {
-  margin: 0; }
+  margin: 0;
+  font-family: "微軟正黑體"; }
 
 body {
   background-color: #ccc; }
 
 .header {
-  background-image: url(../img/asoggetti-1201817-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0% 100%;
   width: 100%;
-  height: 60vh;
+  background-color: #000;
+  height: 100px;
   position: relative; }
   .header h1 {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 10%;
     color: #fff;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -33,8 +32,7 @@ body {
       transform: translate(-50%, -50%);
       width: 400px;
       height: 180px;
-      opacity: 0.3;
-      background-color: white; }
+      opacity: 0.3; }
 
 #container {
   width: 1200px;
@@ -47,7 +45,6 @@ body {
   #container .item {
     width: 33.3%; }
   #container img {
-    background-color: #ccc;
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

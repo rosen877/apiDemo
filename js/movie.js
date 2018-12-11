@@ -50,7 +50,7 @@ function search(){
 }
 $(".searchWarp input").keydown(function (event) {
 	if (event.which == 13) {
-		
+		$('.hotTitle').text('搜尋結果');
 		var searchContent = $(".searchWarp input").val();
 		$.ajax({
 			method: "get",
